@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>IC Alchemy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: 'Exo 2', sans-serif;
-    }
-    
-    .container {
-      text-align: center;
-      padding: 50px;
-    }
-    
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    
-    p {
-      font-size: 24px;
-    }
-  </style>
+    <title>IC Alchemy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black; 
+            color: white; 
+            font-family: 'Orbitron', sans-serif;
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0; 
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        p {
+            opacity: 0;
+                        color: blue;
+font-size:10px;
+        
+            animation: fadeIn ease 3s;
+            animation-fill-mode: forwards;
+            -webkit-animation: fadeIn ease 3s;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation: fadeIn ease 3s;
+            -moz-animation-fill-mode: forwards;
+            -o-animation: fadeIn ease 3s;
+            -o-animation-fill-mode: forwards;
+            -ms-animation: fadeIn ease 3s;
+            -ms-animation-fill-mode: forwards;
+        }
+      
+         .bottom-text {
+            color: white;
+              padding-top: 200px;
+            opacity: 0;
+            animation: fadeslowIn ease 7s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity:0;
+            font-size:10px;}
+            100% {opacity:1;
+            font-size:20px;}
+        }
+         @keyframes fadeslowIn {
+            0% {opacity:0;
+            font-size:10px;}
+            50% {opacity:0.2;
+            font-size:10px;}
+            100% {opacity:1;
+            font-size:33px;}
+        }
+      
+        @-moz-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+
+       @-webkit-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+      
+        @-o-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+      
+        @-ms-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+       }
+    </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>Welcome to IC Alchemy</h1>
-    <p>Made by musicians for musicians and everyone else</p>
-  </div>
+    <h1>IC Alchemy</h1>
+    <p>New modes of expression for analog synths,
+    
+    
+     </p>
+     <p class="bottom-text">coming January 2024...</p>
 </body>
-
+</body>
 </html>
